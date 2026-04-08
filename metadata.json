@@ -1,0 +1,7 @@
+{
+  "name": "MatchCut Maker",
+  "description": "An app to easily capture match cut sequences with onion skinning and export them as a video.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Gowun Dodum", sans-serif;
+  --color-pastel-blue: #E0F2FE;
+  --color-ink: #4A4543;
+  --color-coral: #FF8E8B;
+  --color-butter: #FFD97D;
+  --color-mint: #A8E6CF;
+  --color-sky: #A2D2FF;
+}
+
+body {
+  font-family: "Gowun Dodum", sans-serif;
+  background-color: var(--color-pastel-blue);
+  color: var(--color-ink);
+  overscroll-behavior-y: none;
+}
+
+/* Hide scrollbar for timeline */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
