@@ -77,12 +77,6 @@ export default function App() {
           }
         }
         setAllFrames(savedAllFrames);
-
-        const savedShape = await get('matchcut-shape');
-        if (savedShape && savedAllFrames[savedShape]?.length > 0) {
-          setSelectedShapeId(savedShape);
-          setView('capture');
-        }
       } catch (err) {
         console.error("Failed to load saved data:", err);
       } finally {
