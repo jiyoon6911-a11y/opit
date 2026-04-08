@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { Play, Download, Trash2, RefreshCw, ChevronLeft, Settings2, Share2, BookImage, Sparkles, CalendarHeart, Info, X } from 'lucide-react';
+import { Play, Download, Trash2, Eraser, ChevronLeft, Settings2, Share2, BookImage, Sparkles, CalendarHeart, Info, X } from 'lucide-react';
 import * as Mp4Muxer from 'mp4-muxer';
 import { get, set, clear } from 'idb-keyval';
 
@@ -570,7 +570,7 @@ export default function App() {
                   disabled={frames.length === 0}
                   className="w-14 h-14 rounded-full flex items-center justify-center bg-white shadow-sm hover:bg-gray-50 disabled:opacity-30 transition-colors"
                 >
-                  <RefreshCw className="w-6 h-6 text-ink" />
+                  <Eraser className="w-6 h-6 text-ink" />
                 </button>
 
                 <button 
