@@ -3,19 +3,22 @@
 
 @theme {
   --font-sans: "Gowun Dodum", sans-serif;
-  --color-pastel-blue: #E0F2FE;
-  --color-ink: #4A4543;
-  --color-coral: #FF8E8B;
-  --color-butter: #FFD97D;
-  --color-mint: #A8E6CF;
-  --color-sky: #A2D2FF;
+  --color-paper: #FFFDF8;
+  --color-ink: #5C4A43;
+  --color-coral: #FFAAA5;
+  --color-butter: #FFD3B6;
+  --color-mint: #D4E2D4;
+  --color-sky: #A8D8EA;
+  --color-tape: #E8E4D9;
 }
 
 body {
   font-family: "Gowun Dodum", sans-serif;
-  background-color: var(--color-pastel-blue);
+  background-color: var(--color-paper);
   color: var(--color-ink);
   overscroll-behavior-y: none;
+  background-image: radial-gradient(#D6E6F2 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
 }
 
 /* Hide scrollbar for timeline */
@@ -25,4 +28,20 @@ body {
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Washi tape effect */
+.washi-tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 100px;
+  height: 28px;
+  background-color: rgba(232, 228, 217, 0.6);
+  border-left: 2px dashed rgba(0,0,0,0.05);
+  border-right: 2px dashed rgba(0,0,0,0.05);
+  backdrop-filter: blur(2px);
+  z-index: 10;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
